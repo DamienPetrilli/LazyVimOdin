@@ -3,7 +3,7 @@ LazyVim setup for Odin based on [LazyVim Starter](https://github.com/LazyVim/sta
 
 ## Requirements
 In order for everything to work, you need to clone and compile:
-- [DanielGavin/ols](https://github.com/DanielGavin/ols) into `~/ols` (or change the path in `lua/plugins/odin.lua`
+- [DanielGavin/ols](https://github.com/DanielGavin/ols) into `~/ols` (or change the path in `lua/plugins/odin.lua`)
 
 ## Changes
 - Using a light theme in neovim.
