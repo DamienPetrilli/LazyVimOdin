@@ -46,3 +46,35 @@ rm -rf ~/.config/nvim/.git
 - `S`: Search in directory
 
 Note: `<C->` represents the Ctrl key
+
+## [todo-comments.nvim](https://github.com/folke/todo-comments.nvim)
+
+Features of todo-comments.nvim:
+
+Highlighting: It highlights TODO comments with different colors based on the keyword.
+Signs: It adds icons in the sign column (the margin you mentioned).
+Search: It provides commands to search for TODO comments.
+Navigation: It offers keybindings to jump between TODO comments.
+
+Supported tags:
+By default, it supports these keywords:
+
+- TODO
+- HACK
+- WARN
+- PERF
+- NOTE
+- TEST
+- FIX (which includes FIXME, BUG, FIXIT, ISSUE)
+
+You can customize these keywords, their colors, and icons in the configuration.
+To use the plugin's features:
+
+- `:TodoQuickFix:` Opens a quickfix list with all TODO comments
+- `:TodoLocList:` Opens a location list with all TODO comments
+- `:TodoTelescope:` Opens Telescope with all TODO comments (if you have Telescope installed)
+
+You can also use keybindings to jump between TODO comments:
+
+- `]t`: Jump to next todo comment
+- `[t`: Jump to previous todo comment
