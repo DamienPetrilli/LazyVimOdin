@@ -7,7 +7,7 @@ In order for everything to work, you need to clone and compile:
 
 ## Installation (macOS)
 ```bash
-brew install lua luarocks neovim kitty lazygit ripgrep fd
+brew install lua luarocks neovim kitty lazygit ripgrep fd ast-grep fish
 brew search '/font-.*-nerd-font/' | awk '{ print $1 }' | xargs brew install --cask
 git clone https://github.com/DamienPetrilli/LazyVimOdin/ ~/.config/nvim
 rm -rf ~/.config/nvim/.git
