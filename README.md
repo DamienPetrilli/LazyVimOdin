@@ -1,5 +1,5 @@
 # LazyVim Odin
-LazyVim setup for Odin based on [LazyVim Starter](https://github.com/LazyVim/starter)
+LazyVim setup for Odin based on [LazyVim Starter](https://github.com/LazyVim/starter). For more infos on how to install dependencies on Windows / Linux or documentation, please refer to [LazyVim](http://www.lazyvim.org)
 
 ## Requirements
 In order for everything to work, you need to clone and compile:
