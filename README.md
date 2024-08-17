@@ -21,11 +21,13 @@ rm -rf ~/.config/nvim/.git
 - Using a light theme in neovim.
 - Using a larger symbol view and on the left in Trouble
 
-## Common Neovim keybindings
+## Common Neovim / vim keybindings
 - `Ctrl-/`: Show / hide the terminal
 - `Ctrl-w`: Navigate between windows / split Windows
 - `space-c`:activate the code help
 - `` space-` ``: Switch between buffer. (or previous `[b` next `]b`)
+- `Ctrl-O`: Go back to previous position
+- `Ctrl-I`: Go the next position
 
 ## Common Neotree Keybindings
 - `a`: Add a file or directory
