@@ -11,11 +11,13 @@ cd ~/ols && ./build.sh
 
 ## Installation (macOS)
 ```bash
-brew install lua luarocks neovim kitty lazygit ripgrep fd ast-grep fish
+brew install lua luarocks neovim kitty lazygit ripgrep fd ast-grep fish imagemagick
 brew search '/font-.*-nerd-font/' | awk '{ print $1 }' | xargs brew install --cask
+luarocks --local --lua-version 5.1 install magick
 git clone https://github.com/DamienPetrilli/LazyVimOdin/ ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 ```
+
 ## Changes
 - Using a light theme in neovim.
 - Using a larger symbol view and on the left in Trouble
