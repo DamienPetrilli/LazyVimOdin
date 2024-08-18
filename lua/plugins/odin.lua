@@ -11,31 +11,24 @@ return {
     end,
   },
 
-  -- Mason configuration (we'll keep this, but note that we're not using Mason to install OLS)
-  {
-    "williamboman/mason.nvim",
-    opts = function(_, opts)
-      opts.ensure_installed = opts.ensure_installed or {}
-      -- Remove 'ols' from ensure_installed if it was there before
-      opts.ensure_installed = vim.tbl_filter(function(tool)
-        return tool ~= "ols"
-      end, opts.ensure_installed)
-    end,
-  },
-
   -- Updated LSP configuration
   {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
         ols = {
-          cmd = { vim.fn.expand("~/ols/ols") },  -- Path to your OLS executable
+					mason = false,
         },
       },
       setup = {
-        ols = function(_, opts)
-          require("lspconfig").ols.setup(opts)
-        end,
+				ols = function(_, opts)
+        require("lspconfig").ols.setup(vim.tbl_deep_extend("force", {
+          on_attach = function(client, bufnr)
+            print("OLS server capabilities:")
+            print(vim.inspect(client.server_capabilities))
+          end,
+        }, opts))
+				end,
       },
     },
   },
