@@ -28,6 +28,7 @@ rm -rf ~/.config/nvim/.git
 - `` space-` ``: Switch between buffer. (or previous `[b` next `]b`)
 - `Ctrl-O`: Go back to previous position
 - `Ctrl-I`: Go the next position
+- `Ctrl+]`: Go to the definition of a symbol
 
 ## Common Neotree Keybindings
 - `a`: Add a file or directory
